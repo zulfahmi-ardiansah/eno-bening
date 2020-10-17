@@ -1,0 +1,572 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General Element */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+
+.row {
+    display: grid;
+}
+
+p {
+    font-family: "Roboto";
+    font-size: 1.025em;
+    line-height: 1.35em;
+    color: #555;
+    text-align: justify;
+}
+
+.section-title {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.section-title:after {
+    content: ".";
+    font-size: 1.3em;
+    color: #058B72;
+}
+
+.division-title {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 1.75em;
+    margin-bottom: 30px;
+}
+
+.division-title:after {
+    content: ".";
+    font-size: 1.5em;
+    color: #058B72;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    position: relative;
+    z-index: 99;
+}
+
+header .row {
+    grid-template-columns: 1fr 2fr;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+header .row .nav-title h3 {
+    font-family: "Raleway";
+    font-weight: bolder;
+    font-size: 1.75em;
+}
+
+header .row .nav-title h3 small {
+    display: block;
+    font-size: .65em;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+header .row .nav-menu {
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+header .row .nav-menu ul {
+    margin-left: auto;
+}
+
+header .row .nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .row .nav-menu li:last-child {
+    margin-right: 0px;
+}
+
+header .row .nav-menu li a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Raleway";
+    font-weight: 600;
+    color: #000;
+}
+
+/* Home */
+#home .container {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#home .row {
+    grid-template-columns: 1fr 1fr;
+}
+
+#home h1.home-title {
+    font-size: 3.20em;
+    font-family: "Raleway";
+    font-weight: bold;
+    line-height: 1.15em;
+}
+
+#home h1.home-title small {
+    font-size: .70em;
+    display: block;
+    line-height: 1.25em;
+}
+
+#home h1.home-title small b {
+    font-weight: bolder;
+    color: #058B72;
+}
+
+#home p.home-paragraph {
+    margin-top: 15px;
+}
+
+#home h3.section-title {
+    margin-top: 20px;
+}
+
+#home .home-client {
+    margin-top: 15px;
+}
+
+#home .home-client li {
+    display: inline-block;
+}
+
+#home .home-client li img {
+    max-height: 39px;
+    max-width: 85px;
+    filter: saturate(0);
+}
+
+#home .home-client li a:hover img {
+    filter: saturate(1);
+}
+
+#home .home-client li {
+    margin-right: 15px;
+}
+
+#home .home-client li:last-child {
+    margin-right: 0px;
+}
+
+#home .home-blob {
+    opacity: .15;
+    position: absolute;
+    width: 50vw;
+    right: 0;
+    top: -28%;
+    right: -10%;
+    z-index: 9;
+}
+
+#home .home-avatar {
+    margin-left: 35px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Services */
+#services .container {
+    height: 90vh;
+    display: flex;
+}
+
+#services .row {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-content: center;
+}
+
+#services .service-table {
+    width: 100%;
+    max-width: 100%;
+}
+
+#services .service-table .service-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: black;
+}
+
+#services .service-table tr td {
+    padding-bottom: 23px;
+    vertical-align: top;
+}
+
+#services .service-table tr td:first-child {
+    padding-right: 20px;
+}
+
+#services .service-table tr:last-child td {
+    padding-bottom: 0px;
+}
+
+#services .service-table .service-paragraph {
+    font-size: 1em;
+}
+
+#services .service-table .service-icon {
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(5, 139, 114, 0.1);
+    border-radius: 10px;
+}
+
+#services .service-avatar {
+    margin-top: 10px;
+    transform: translateX(-30px);
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+#services {
+    position: relative;
+}
+
+#services .service-blob {
+    position: absolute;
+    opacity: .15;
+    width: 55vw;
+    left: -18vw;
+    top: -5vw;
+}
+
+/* Article */
+#articles {
+    position: relative;
+}
+
+#articles .container {
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
+#articles .row {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-content: center;
+}
+
+#articles .article-container {
+    width: 100%;
+}
+
+#articles article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#articles .article-content {
+    padding-left: 20px;
+}
+
+#articles .article-thumbnail {
+    background-color: #e6f3f1;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#articles .article-thumbnail img {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#articles .article-thumbnail .after {
+    display: block;
+    border: 2px solid #058b72;
+    width: 30%;
+    margin-left: auto;
+    margin-top: -3px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 5px;
+}
+
+#articles .article-thumbnail .before {
+    display: block;
+    border: 2px solid #058b72;
+    width: 30%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 5px;
+}
+
+#articles .article-title {
+    display: block;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-align: left !important;
+}
+
+#articles .article-content {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+#articles .article-title span {
+    font-size: .85em;
+    margin-top: 8px;
+    color: #222;
+    font-weight: 500;
+}
+
+#articles .article-paragraph {
+    font-size: .95em;
+}
+
+#articles article {
+    margin-bottom: 25px;
+}
+
+#articles article:last-child {
+    margin-bottom: 0px;
+}
+
+#articles .article-avatar {
+    margin-top: 30px;
+    transform: translateX(30px);
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+#articles .article-blob {
+    position: absolute;
+    opacity: .15;
+    width: 55vw;
+    right: -18vw;
+    top: -10vw;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 10em;
+}
+
+#contact .division-title {
+    margin-bottom: 20px;
+}
+
+#contact table {
+    margin: auto;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact .contact-table {
+    margin-top: 15px;
+    font-family: "Roboto";
+}
+
+#contact .contact-table td {
+    text-align: left;
+    padding: 8px 9px;
+}
+
+#contact .contact-table td a {
+    text-decoration: none;
+    color: #222;
+}
+
+#contact .contact-table td i {
+    color: #058b72;
+    background-color: #e6f3f1;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+footer .footer-mark {
+    font-family: "Roboto";
+    text-align: center;
+    color: #555;
+    font-size: .95em;
+    padding: 10px;
+}
+
+footer .footer-mark b {
+    font-weight: bold;
+    color: #058d8e;
+}
+
+footer .footer-blob {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: .15;
+    transform: translateY(10px);
+}

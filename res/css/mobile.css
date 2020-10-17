@@ -1,0 +1,167 @@
+@media (max-width: 1024px) {
+
+    /* General */
+    .row {
+        display: block;
+    }
+
+    p {
+        font-size: .825em;
+        line-height: 1.5em;
+    }
+
+    .section-title {
+        font-size: 1em;
+    }
+    
+    .division-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* Header */
+    header .nav-title h3 {
+        font-size: 1.3em !important;
+        text-align: center;
+    }
+    
+    header .nav-menu {
+        display: none !important;
+    }
+    
+    header .row {
+        display: block;
+    }
+
+    /* Home */
+    #home {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+        position: relative;
+    }
+    
+    #home .home-blob {
+        top: -5vh;
+        width: 95vw;
+    }
+
+    #home .container {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    #home .row {
+        display: flex;
+        flex: content;
+        flex-wrap: wrap-reverse;
+    }
+    
+    #home .col {
+        width: 100%;
+    }
+
+    #home h1.home-title {
+        font-size: 2.2em;
+    }
+
+    #home p.home-paragraph {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #home .home-client {
+        text-align: center;
+    }
+
+    #home .home-client li {
+        margin: 0px 10px;
+    }
+
+    #home .home-client li img {
+        max-height: 32px;
+        max-width: 75px;
+    }
+    
+    #home .home-avatar {
+        margin-left: 0px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Services */
+    #services {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+    
+    #services .container {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    
+    #services .service-avatar {
+        transform: translateX(0px);
+        padding: 10px;
+    }
+    
+    #services .service-table .service-paragraph {
+        font-size: .85em;
+    }
+    
+    #services .service-blob {
+        width: 95vw;
+    }
+    
+    /* Page */
+    #articles article {
+        display: block;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    #articles .container {
+        padding-bottom: 2em;
+    }
+    
+    #articles .article-content {
+        padding: 0px;
+        margin-top: 15px;
+    }
+    
+    #articles .article-paragraph {
+        font-size: .85em;
+        text-align: center;
+    }
+    
+    #articles .article-paragraph .article-title {
+        text-align: center !important;
+    }
+    
+    #articles .article-avatar {
+        display: none;
+    }
+    
+    #articles .article-blob {
+        width: 95vw;
+        top: -15vh;
+    }
+    
+    /* Contact */
+    #contact {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+    
+    #contact .contact-table {
+        font-size: .82em;
+    }
+    
+    /* Footer */
+    footer .footer-mark {
+        font-size: .8em;
+        margin-top: 20px;
+    }
+}
