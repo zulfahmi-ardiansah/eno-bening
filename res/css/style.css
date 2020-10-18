@@ -502,6 +502,10 @@ header .row .nav-menu li a {
     top: -10vw;
 }
 
+#articles a {
+    text-decoration: none;
+}
+
 /* Contact */
 #contact {
     text-align: center;

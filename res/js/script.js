@@ -9,17 +9,21 @@ $.ajax({
                 var monthArray = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
                 var date = dateArray[2] + " " + monthArray[parseInt(dateArray[1]) - 1] + " " + dateArray[0];
                 $("#article-content").append(`
-                    <article  data-aos-delay="${100 + (200 * index)}" data-aos="fade-left" data-aos-duration="750">
+                    <article data-aos-delay="${100 + (200 * index)}" data-aos="fade-left" data-aos-duration="750">
                         <div class="article-thumbnail">
-                            <span class="before"></span>
-                            <img src="${element.featured_image}" alt="">
-                            <span class="after"></span>
+                            <a href="https://karyakarsa.com/enobening/${element.slug}">
+                                <span class="before"></span>
+                                <img src="${element.featured_image}" alt="">
+                                <span class="after"></span>
+                            </a>
                         </div>
                         <div class="article-content">
                             <p class="article-paragraph">
-                                <b class="article-title">
-                                ${element.title}
-                                </b>
+                                <a href="https://karyakarsa.com/enobening/${element.slug}">
+                                    <b class="article-title">
+                                    ${element.title}
+                                    </b>
+                                </a>
                                 ${date}
                             </p>
                         </div>
