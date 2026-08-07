@@ -7,6 +7,8 @@
 
 **Eno Bening Portfolio Web** showcases the personal brand, professional services, corporate clients, and recent writing of Eno Bening, a prominent Indonesian social media consultant with over a decade of experience. The site features dynamic article fetching from KaryaKarsa API, smooth scroll animations, and a fully responsive layout.
 
+**Demo:** <https://zulfahmi-ardiansah.github.io/eno-bening/>
+
 ---
 
 ## Features
